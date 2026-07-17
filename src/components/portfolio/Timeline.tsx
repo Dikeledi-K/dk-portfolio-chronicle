@@ -16,8 +16,7 @@ const education: Item[] = [
   {
     title: "National Diploma in Software Engineering",
     place: "WeThinkCode_ · Specialisation: Data Engineering",
-    period: "Present",
-    status: "Currently Studying",
+    period: "Completed",
     icon: GraduationCap,
   },
   {

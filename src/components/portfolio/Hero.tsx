@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import { Download, Github, Linkedin, Mail, ArrowRight } from "lucide-react";
-import portrait from "@/assets/portrait.jpg";
+import portraitAsset from "@/assets/portrait.jpg.asset.json";
+const portrait = portraitAsset.url;
 
 const roles = ["Data Engineering", "Software Engineering", "AI Enthusiast", "Problem Solver"];
 
