@@ -31,8 +31,8 @@ export function About() {
             a solid technical foundation.
           </p>
           <p>
-            I'm currently pursuing a <span className="text-foreground">National Diploma in
-            Software Engineering at WeThinkCode_</span>, specialising in Data Engineering.
+            I completed a <span className="text-foreground">National Diploma in
+            Software Engineering at WeThinkCode_</span>, where I specialised in Data Engineering.
             My interests span Software Development, Artificial Intelligence, Cloud Computing
             and Data Engineering.
           </p>
