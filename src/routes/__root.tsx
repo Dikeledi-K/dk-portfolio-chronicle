@@ -88,7 +88,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         property: "og:description",
         content:
-          "Aspiring Software & Data Engineer. Building intelligent solutions with AI, data and modern web technologies.",
+          "Portfolio of Dikeledi Kwenaite — aspiring Software & Data Engineer based in Johannesburg. Projects, skills, education, certifications and contact.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
@@ -96,8 +96,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:title", content: "Dikeledi Kwenaite — Software & Data Engineer" },
       {
         name: "twitter:description",
-        content: "Aspiring Software & Data Engineer portfolio.",
+        content: "Portfolio of Dikeledi Kwenaite — aspiring Software & Data Engineer based in Johannesburg. Projects, skills, education, certifications and contact.",
       },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1c92acc8-e6dc-4189-bd77-489cb0335761/id-preview-5bbe2ee1--27222709-39f4-4e53-88f5-7fb780fd0366.lovable.app-1784301904210.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1c92acc8-e6dc-4189-bd77-489cb0335761/id-preview-5bbe2ee1--27222709-39f4-4e53-88f5-7fb780fd0366.lovable.app-1784301904210.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
