@@ -214,7 +214,7 @@ export function Hero() {
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
             className="absolute -top-4 -right-4 glass-card rounded-2xl px-4 py-3"
           >
-            <p className="text-[10px] uppercase tracking-widest text-muted-foreground">Currently</p>
+            <p className="text-[10px] uppercase tracking-widest text-muted-foreground">Graduated from</p>
             <p className="text-sm font-semibold text-primary">WeThinkCode_</p>
           </motion.div>
         </motion.div>
