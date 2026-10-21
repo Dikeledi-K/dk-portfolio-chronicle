@@ -45,6 +45,7 @@ const projects: Project[] = [
     tech: ["Node.js", "Express", "Gemini API", "Tesseract OCR"],
     category: "AI",
     github: "https://github.com/Dikeledi-K/ai_chatbot",
+    demo: "https://ai-chatbot-theta-mocha.vercel.app/",
     icon: GraduationCap,
     accent: "from-orange-400/30 to-transparent",
   },
