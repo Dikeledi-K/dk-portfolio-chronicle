@@ -3,7 +3,7 @@ import { Section } from "./Section";
 import { GraduationCap, Sparkles, Cloud, Database } from "lucide-react";
 
 const highlights = [
-  { icon: GraduationCap, label: "WeThinkCode_ Graduate · Data Engineering" },
+  { icon: GraduationCap, label: "WeThinkCode_ · Software Engineering Graduate" },
   { icon: Sparkles, label: "AI & Machine Learning" },
   { icon: Cloud, label: "Cloud Computing" },
   { icon: Database, label: "Data Engineering" },
