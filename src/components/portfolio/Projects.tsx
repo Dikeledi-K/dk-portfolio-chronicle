@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Section } from "./Section";
-import { Github, ExternalLink, Bot, LayoutDashboard, User } from "lucide-react";
+import { Github, ExternalLink, Sparkles, ChartColumn, Stethoscope, GraduationCap, HandCoins } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 type Project = {
@@ -17,37 +17,57 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "AI Workplace Assistant",
+    title: "ClinicQ",
     description:
-      "An AI-powered productivity app that automates office tasks — intelligent task management, meeting summarisation, email generation, document assistance and productivity dashboards.",
-    tech: ["React", "Tailwind CSS", "TypeScript", "OpenAI API"],
+      "AI patient intake, triage and clinic-flow assistant for South African public clinics. It captures each patient's story, flags urgent cases early and tracks them from registration to pharmacy, while staff make every clinical decision.",
+    tech: ["Python", "Streamlit", "Claude API", "SQLite"],
     category: "AI",
-    github: "#",
-    demo: "#",
-    icon: Bot,
+    github: "https://github.com/Dikeledi-K/AI_Solution",
+    demo: "https://nztdbvtrm3ve2ixwknarwg.streamlit.app/",
+    icon: Stethoscope,
     accent: "from-amber-400/30 to-transparent",
   },
   {
-    title: "Professional Portfolio Website",
+    title: "CreateAI",
     description:
-      "A responsive developer portfolio showcasing my education, technical skills, certifications, projects and career journey.",
-    tech: ["React", "Tailwind CSS", "TypeScript", "Framer Motion"],
-    category: "Web",
-    github: "#",
-    demo: "#",
-    icon: User,
+      "An AI content and code generation workspace. Generate blog posts, emails, social posts, images, voice-overs and code from a prompt or uploaded documents, then refine with follow-ups and keep a history of results.",
+    tech: ["React", "Vite", "Express", "OpenRouter"],
+    category: "AI",
+    github: "https://github.com/Dikeledi-K/content_generation",
+    demo: "https://contentgeneration-mocha.vercel.app/",
+    icon: Sparkles,
     accent: "from-yellow-500/30 to-transparent",
   },
   {
-    title: "Data Engineering Dashboard",
+    title: "StudyBuddy AI",
     description:
-      "A modern data dashboard that visualises datasets through interactive charts and reports while demonstrating data engineering concepts.",
-    tech: ["Python", "SQL", "React", "Charts"],
-    category: "Data",
-    github: "#",
-    demo: "#",
-    icon: LayoutDashboard,
+      "A friendly AI study assistant for explanations, summaries, study plans, quizzes, exam prep and coding help. Students can upload PDFs, Word documents or photos of their notes to study from their own material.",
+    tech: ["Node.js", "Express", "Gemini API", "Tesseract OCR"],
+    category: "AI",
+    github: "https://github.com/Dikeledi-K/ai_chatbot",
+    icon: GraduationCap,
     accent: "from-orange-400/30 to-transparent",
+  },
+  {
+    title: "Quality & Returns Intelligence",
+    description:
+      "Turns customer feedback and returns data into product-quality insights: sentiment classification, recurring defect detection, product return rates and a ready-to-share Markdown report.",
+    tech: ["Python", "Streamlit", "scikit-learn", "Plotly"],
+    category: "Data",
+    github: "https://github.com/Dikeledi-K/sentiment_analysis",
+    demo: "https://sentimentanalysisgit-e5kmmnpan85xczqrsobmhf.streamlit.app/",
+    icon: ChartColumn,
+    accent: "from-amber-400/30 to-transparent",
+  },
+  {
+    title: "iS'khaftin",
+    description:
+      "An Ubuntu community crowdfunding platform for South African communities. People start micro-campaigns for local needs, small donations are pooled together, and blockchain records keep every contribution traceable.",
+    tech: ["Next.js", "Tailwind CSS", "Blockchain", "Farcaster Frames"],
+    category: "Web",
+    demo: "https://mini-app-six-bay.vercel.app/",
+    icon: HandCoins,
+    accent: "from-yellow-500/30 to-transparent",
   },
 ];
 
