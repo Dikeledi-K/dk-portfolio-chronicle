@@ -108,7 +108,7 @@ export function Hero() {
             className="mt-5 space-y-1"
           >
             <p className="text-lg md:text-xl text-foreground/90">
-              Software Engineering Student · Aspiring Data & Software Engineer
+              Software Engineering Graduate · Aspiring Data & Software Engineer
             </p>
             <p className="text-lg md:text-xl">
               <span className="text-muted-foreground">I specialise in </span>
@@ -204,17 +204,17 @@ export function Hero() {
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute -bottom-6 -left-6 glass-card rounded-2xl px-4 py-3"
+            className="absolute -bottom-6 -left-6 rounded-2xl px-4 py-3 bg-background/90 backdrop-blur-md border border-primary/40 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.8)]"
           >
-            <p className="text-[10px] uppercase tracking-widest text-muted-foreground">Based in</p>
-            <p className="text-sm font-semibold">Johannesburg, ZA</p>
+            <p className="text-[10px] uppercase tracking-widest text-primary/80">Based in</p>
+            <p className="text-sm font-semibold text-foreground">Johannesburg, ZA</p>
           </motion.div>
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute -top-4 -right-4 glass-card rounded-2xl px-4 py-3"
+            className="absolute -top-4 -right-4 rounded-2xl px-4 py-3 bg-background/90 backdrop-blur-md border border-primary/40 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.8)]"
           >
-            <p className="text-[10px] uppercase tracking-widest text-muted-foreground">Graduated from</p>
+            <p className="text-[10px] uppercase tracking-widest text-primary/80">Graduated from</p>
             <p className="text-sm font-semibold text-primary">WeThinkCode_</p>
           </motion.div>
         </motion.div>
