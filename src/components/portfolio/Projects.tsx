@@ -25,7 +25,7 @@ const projects: Project[] = [
     github: "https://github.com/Dikeledi-K/AI_Solution",
     demo: "https://nztdbvtrm3ve2ixwknarwg.streamlit.app/",
     icon: Stethoscope,
-    accent: "from-amber-400/30 to-transparent",
+    accent: "from-[#7A1F3D]/45 to-transparent",
   },
   {
     title: "CreateAI",
@@ -36,7 +36,7 @@ const projects: Project[] = [
     github: "https://github.com/Dikeledi-K/content_generation",
     demo: "https://contentgeneration-mocha.vercel.app/",
     icon: Sparkles,
-    accent: "from-yellow-500/30 to-transparent",
+    accent: "from-[#D9AE94]/25 to-transparent",
   },
   {
     title: "StudyBuddy AI",
@@ -47,7 +47,7 @@ const projects: Project[] = [
     github: "https://github.com/Dikeledi-K/ai_chatbot",
     demo: "https://ai-chatbot-theta-mocha.vercel.app/",
     icon: GraduationCap,
-    accent: "from-orange-400/30 to-transparent",
+    accent: "from-[#B5677A]/30 to-transparent",
   },
   {
     title: "Quality & Returns Intelligence",
@@ -58,7 +58,7 @@ const projects: Project[] = [
     github: "https://github.com/Dikeledi-K/sentiment_analysis",
     demo: "https://sentimentanalysisgit-e5kmmnpan85xczqrsobmhf.streamlit.app/",
     icon: ChartColumn,
-    accent: "from-amber-400/30 to-transparent",
+    accent: "from-[#7A1F3D]/45 to-transparent",
   },
   {
     title: "iS'khaftin",
@@ -68,7 +68,7 @@ const projects: Project[] = [
     category: "Web",
     demo: "https://mini-app-six-bay.vercel.app/",
     icon: HandCoins,
-    accent: "from-yellow-500/30 to-transparent",
+    accent: "from-[#D9AE94]/25 to-transparent",
   },
 ];
 
@@ -92,7 +92,7 @@ export function Projects() {
             onClick={() => setFilter(f)}
             className={`rounded-full px-4 py-2 text-sm font-medium transition-all ${
               filter === f
-                ? "bg-primary text-primary-foreground shadow-[0_10px_30px_-10px_rgba(212,175,55,0.6)]"
+                ? "bg-primary text-primary-foreground shadow-[0_10px_30px_-10px_rgba(217,174,148,0.6)]"
                 : "border border-primary/25 text-muted-foreground hover:text-primary hover:border-primary/50"
             }`}
           >
@@ -115,7 +115,7 @@ export function Projects() {
               className="group relative glass-card rounded-3xl overflow-hidden flex flex-col"
             >
               <div className={`relative h-44 bg-gradient-to-br ${p.accent} border-b border-primary/10 overflow-hidden`}>
-                <div className="absolute inset-0 opacity-30 [background:radial-gradient(circle_at_30%_30%,rgba(212,175,55,0.5),transparent_60%)]" />
+                <div className="absolute inset-0 opacity-30 [background:radial-gradient(circle_at_30%_30%,rgba(217,174,148,0.5),transparent_60%)]" />
                 <div className="absolute inset-0 grid place-items-center">
                   <div className="grid place-items-center w-20 h-20 rounded-2xl bg-background/40 backdrop-blur-md border border-primary/30 text-primary group-hover:scale-110 transition-transform duration-500">
                     <p.icon size={32} />

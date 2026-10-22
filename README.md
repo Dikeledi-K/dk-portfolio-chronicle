@@ -4,7 +4,7 @@ A premium, modern, responsive personal portfolio website built for graduate prog
 
 ## Overview
 
-This is a single-page portfolio with a black & gold, glassmorphic aesthetic — designed to feel premium, elegant, and production-ready. It showcases my background, education, technical & soft skills, selected projects, certifications, and contact details.
+This is a single-page portfolio with a merlot & champagne, glassmorphic aesthetic — designed to feel premium, elegant, and production-ready. It showcases my background, education, technical & soft skills, selected projects, certifications, and contact details.
 
 ### Sections
 
@@ -119,7 +119,7 @@ src/
 
 Colors, gradients, and typography are defined as semantic design tokens in `src/styles.css`. Components consume tokens (`bg-primary`, `text-foreground`) rather than hardcoded values, so the theme can be re-skinned in one place.
 
-- **Palette**: deep black background with warm gold accents (`#8A6D1E → #D4AF37 → #F5D77A`)
+- **Palette**: deep wine-black background (`#140C11`), ivory text and champagne rose-gold accents (`#9C6B5A → #D9AE94 → #F3D9C6`) with soft merlot glows (`#7A1F3D`)
 - **Effects**: glassmorphism (`.glass-card`), gold gradient text (`.gold-gradient-text`), soft radial glows
 - **Motion**: scroll-triggered fades, staggered reveals, hover lifts (Framer Motion)
 
