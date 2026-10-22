@@ -93,7 +93,7 @@ export function Contact() {
           </div>
           <button
             type="submit"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3 text-sm font-semibold shadow-[0_10px_30px_-10px_rgba(212,175,55,0.6)] hover:shadow-[0_15px_40px_-10px_rgba(212,175,55,0.9)] hover:-translate-y-0.5 transition-all"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3 text-sm font-semibold shadow-[0_10px_30px_-10px_rgba(217,174,148,0.6)] hover:shadow-[0_15px_40px_-10px_rgba(217,174,148,0.9)] hover:-translate-y-0.5 transition-all"
           >
             {sent ? (
               <>

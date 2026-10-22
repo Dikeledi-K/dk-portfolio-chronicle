@@ -59,7 +59,7 @@ export function Skills() {
                     whileInView={{ width: `${s.level}%` }}
                     viewport={{ once: true }}
                     transition={{ duration: 1.1, delay: 0.15 + i * 0.03, ease: "easeOut" }}
-                    className="h-full rounded-full bg-gradient-to-r from-[#8A6D1E] via-[#D4AF37] to-[#F5D77A]"
+                    className="h-full rounded-full bg-gradient-to-r from-[#9C6B5A] via-[#D9AE94] to-[#F3D9C6]"
                   />
                 </div>
               </motion.div>
