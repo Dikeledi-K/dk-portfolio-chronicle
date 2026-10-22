@@ -7,7 +7,7 @@ export function ScrollProgress() {
   return (
     <motion.div
       style={{ scaleX: scrollYProgress }}
-      className="fixed top-0 left-0 right-0 h-[2px] origin-left bg-gradient-to-r from-[#9C6B5A] via-[#D9AE94] to-[#F3D9C6] z-[60]"
+      className="fixed top-0 left-0 right-0 h-[2px] origin-left bg-gradient-to-r from-[var(--c-accent-dark)] via-[var(--c-accent)] to-[var(--c-accent-light)] z-[60]"
     />
   );
 }
@@ -28,7 +28,7 @@ export function BackToTop() {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.6 }}
           aria-label="Back to top"
-          className="fixed bottom-6 right-6 z-50 grid place-items-center w-12 h-12 rounded-full bg-primary text-primary-foreground shadow-[0_10px_30px_-10px_rgba(217,174,148,0.8)] hover:-translate-y-1 transition-transform"
+          className="fixed bottom-6 right-6 z-50 grid place-items-center w-12 h-12 rounded-full bg-primary text-primary-foreground shadow-[0_10px_30px_-10px_rgb(var(--c-accent-rgb)/0.8)] hover:-translate-y-1 transition-transform"
         >
           <ArrowUp size={18} />
         </motion.button>
