@@ -137,7 +137,7 @@ export function Hero() {
           >
             <a
               href="#projects"
-              className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3 text-sm font-semibold shadow-[0_10px_30px_-10px_rgba(217,174,148,0.6)] hover:shadow-[0_15px_40px_-10px_rgba(217,174,148,0.8)] transition-all hover:-translate-y-0.5"
+              className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3 text-sm font-semibold shadow-[0_10px_30px_-10px_rgb(var(--c-accent-rgb)/0.6)] hover:shadow-[0_15px_40px_-10px_rgb(var(--c-accent-rgb)/0.8)] transition-all hover:-translate-y-0.5"
             >
               View Projects
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />

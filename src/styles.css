@@ -40,35 +40,49 @@
 :root {
   --radius: 0.75rem;
 
-  /* Merlot & champagne: deep wine-black, warm ivory, rose-gold accents */
-  --background: oklch(0.155 0.018 350);    /* #140C11 wine-black */
-  --foreground: oklch(0.965 0.008 60);     /* #F7F1EC ivory */
-  --surface: oklch(0.19 0.022 350);        /* #1C1218 */
-  --surface-2: oklch(0.225 0.026 350);     /* #251820 */
-  --card: oklch(0.225 0.026 350);
-  --card-foreground: oklch(0.965 0.008 60);
-  --popover: oklch(0.19 0.022 350);
-  --popover-foreground: oklch(0.965 0.008 60);
-  --primary: oklch(0.79 0.065 50);         /* champagne rose-gold #D9AE94 */
-  --primary-foreground: oklch(0.155 0.018 350);
-  --gold: oklch(0.79 0.065 50);
-  --gold-soft: oklch(0.88 0.04 55);        /* blush champagne #EED5C4 */
-  --wine: oklch(0.42 0.13 360);            /* merlot #7A1F3D */
-  --secondary: oklch(0.24 0.03 350);
-  --secondary-foreground: oklch(0.965 0.008 60);
-  --muted: oklch(0.24 0.03 350);
-  --muted-foreground: oklch(0.76 0.025 350); /* soft mauve-grey */
-  --accent: oklch(0.79 0.065 50);
-  --accent-foreground: oklch(0.155 0.018 350);
+  /* ---- Palette: change these values to re-theme the whole site ---- */
+  --c-bg: #120E1C;              /* Royal plum & silver */
+  --c-surface: #191426;
+  --c-surface-2: #211A32;
+  --c-fg: #F5F2FA;
+  --c-muted-fg: #B3ABC4;
+  --c-accent: #C9B8E8;          /* lavender silver: buttons, highlights */
+  --c-accent-light: #E9E0F8;    /* gradient start */
+  --c-accent-dark: #8A74B8;     /* gradient end */
+  --c-accent-rgb: 201 184 232;  /* accent as RGB for glows */
+  --c-glow-rgb: 75 46 131;      /* royal plum background glow */
+  --c-tint-1: 75 46 131;        /* project card headers */
+  --c-tint-2: 201 184 232;
+  --c-tint-3: 110 79 163;
+
+  --background: var(--c-bg);
+  --foreground: var(--c-fg);
+  --surface: var(--c-surface);
+  --surface-2: var(--c-surface-2);
+  --card: var(--c-surface-2);
+  --card-foreground: var(--c-fg);
+  --popover: var(--c-surface);
+  --popover-foreground: var(--c-fg);
+  --primary: var(--c-accent);
+  --primary-foreground: var(--c-bg);
+  --gold: var(--c-accent);
+  --gold-soft: var(--c-accent-light);
+  --wine: rgb(var(--c-glow-rgb));
+  --secondary: var(--c-surface-2);
+  --secondary-foreground: var(--c-fg);
+  --muted: var(--c-surface-2);
+  --muted-foreground: var(--c-muted-fg);
+  --accent: var(--c-accent);
+  --accent-foreground: var(--c-bg);
   --destructive: oklch(0.62 0.22 25);
-  --border: oklch(0.79 0.065 50 / 12%);
-  --input: oklch(0.79 0.065 50 / 16%);
-  --ring: oklch(0.79 0.065 50);
+  --border: rgb(var(--c-accent-rgb) / 0.12);
+  --input: rgb(var(--c-accent-rgb) / 0.16);
+  --ring: var(--c-accent);
 }
 
 .dark {
-  --background: oklch(0.155 0.018 350);
-  --foreground: oklch(0.965 0.008 60);
+  --background: var(--c-bg);
+  --foreground: var(--c-fg);
 }
 
 @layer base {
@@ -84,9 +98,9 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     background-image:
-      radial-gradient(1200px 650px at 85% -10%, oklch(0.42 0.13 360 / 0.28), transparent 60%),
-      radial-gradient(900px 520px at -10% 25%, oklch(0.79 0.065 50 / 0.07), transparent 60%),
-      radial-gradient(1000px 600px at 50% 110%, oklch(0.42 0.13 360 / 0.16), transparent 60%);
+      radial-gradient(1200px 650px at 85% -10%, rgb(var(--c-glow-rgb) / 0.28), transparent 60%),
+      radial-gradient(900px 520px at -10% 25%, rgb(var(--c-accent-rgb) / 0.07), transparent 60%),
+      radial-gradient(1000px 600px at 50% 110%, rgb(var(--c-glow-rgb) / 0.16), transparent 60%);
     background-attachment: fixed;
   }
   h1, h2, h3, h4 {
@@ -95,12 +109,12 @@
   }
   ::selection {
     background: var(--gold);
-    color: #140C11;
+    color: var(--c-bg);
   }
 }
 
 @utility gold-gradient-text {
-  background: linear-gradient(135deg, #F3D9C6 0%, #D9AE94 45%, #9C6B5A 100%);
+  background: linear-gradient(135deg, var(--c-accent-light) 0%, var(--c-accent) 45%, var(--c-accent-dark) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -108,16 +122,16 @@
 
 @utility glass-card {
   background: linear-gradient(180deg, rgba(255,240,235,0.045), rgba(255,240,235,0.02));
-  border: 1px solid rgba(217,174,148,0.15);
+  border: 1px solid rgb(var(--c-accent-rgb) / 0.15);
   backdrop-filter: blur(14px);
   box-shadow: 0 10px 40px -20px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.04);
 }
 
 @utility gold-border-glow {
-  box-shadow: 0 0 0 1px rgba(217,174,148,0.3), 0 20px 60px -20px rgba(217,174,148,0.25);
+  box-shadow: 0 0 0 1px rgb(var(--c-accent-rgb) / 0.3), 0 20px 60px -20px rgb(var(--c-accent-rgb) / 0.25);
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 10px; height: 10px; }
-::-webkit-scrollbar-track { background: #140C11; }
-::-webkit-scrollbar-thumb { background: linear-gradient(#D9AE94, #9C6B5A); border-radius: 8px; }
+::-webkit-scrollbar-track { background: var(--c-bg); }
+::-webkit-scrollbar-thumb { background: linear-gradient(var(--c-accent), var(--c-accent-dark)); border-radius: 8px; }
