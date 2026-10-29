@@ -144,7 +144,7 @@ export function Hero() {
             </a>
             <a
               href="/cv.pdf"
-              download
+              download="Dikeledi-Kwenaite-CV.pdf"
               className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/5 px-6 py-3 text-sm font-semibold text-foreground hover:bg-primary/15 transition-colors"
             >
               <Download size={16} /> Download CV
