@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Section } from "./Section";
-import { Github, ExternalLink, Sparkles, ChartColumn, Stethoscope, GraduationCap, HandCoins } from "lucide-react";
+import { Github, ExternalLink, Sparkles, ChartColumn, Stethoscope, GraduationCap, HandCoins, School } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 type Project = {
@@ -16,6 +16,17 @@ type Project = {
 };
 
 const projects: Project[] = [
+  {
+    title: "SchoolConnect",
+    description:
+      "AI help desk for South African public schools. It classifies parent messages in five languages, routes them to the right staff member with a promised response time, escalates anything overdue, forecasts busy weeks and produces weekly reports. Child-safety messages always go to a person, and learner data is protected under POPIA.",
+    tech: ["Python", "FastAPI", "Streamlit", "PostgreSQL", "scikit-learn"],
+    category: "AI",
+    github: "https://github.com/Dikeledi-K/schoolconnect",
+    demo: "https://schoolconnect-web-cwa0.onrender.com",
+    icon: School,
+    accent: "from-[rgb(var(--c-tint-3)/0.3)] to-transparent",
+  },
   {
     title: "ClinicQ",
     description:
