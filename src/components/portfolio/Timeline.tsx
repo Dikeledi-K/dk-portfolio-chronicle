@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Section } from "./Section";
-import { GraduationCap, Briefcase, Award } from "lucide-react";
+import { GraduationCap, Briefcase, Award, ExternalLink } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 type Item = {
@@ -91,16 +91,17 @@ export function Experience() {
 }
 
 const certifications = [
-  { title: "Microsoft AI Fluency", issuer: "Microsoft", year: "2025" },
-  { title: "Microsoft AI Skills Fest", issuer: "Microsoft", year: "2025" },
-  { title: "Certification Placeholder", issuer: "Issuer", year: "20XX" },
-  { title: "Certification Placeholder", issuer: "Issuer", year: "20XX" },
+  { title: "Supervised Machine Learning: Regression and Classification", issuer: "DeepLearning.AI", year: "2026", url: "https://www.coursera.org/account/accomplishments/verify/SVBMB0B4XD47" },
+  { title: "Unsupervised Learning, Recommenders, Reinforcement Learning", issuer: "DeepLearning.AI", year: "2026", url: "https://www.coursera.org/account/accomplishments/records/IIPBFM5CLT9T" },
+  { title: "Artificial Intelligence on Microsoft Azure", issuer: "Microsoft", year: "2026", url: "https://www.coursera.org/account/accomplishments/records/Q6P6UQIWJATD" },
+  { title: "Trustworthy AI: Managing Bias, Ethics, and Accountability", issuer: "Johns Hopkins University", year: "2026", url: "https://www.coursera.org/account/accomplishments/verify/EOECZC96UN6Q" },
+  { title: "Python for Data Science, AI & Development", issuer: "IBM", year: "2026", url: "https://www.coursera.org/account/accomplishments/records/K743AKEDJRSL" },
 ];
 
 export function Certifications() {
   return (
     <Section id="certifications" eyebrow="Certifications" title="Continuous learning.">
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {certifications.map((c, i) => (
           <motion.div
             key={c.title + i}
@@ -116,7 +117,17 @@ export function Certifications() {
             </span>
             <h3 className="mt-4 font-semibold text-foreground">{c.title}</h3>
             <p className="mt-1 text-xs text-muted-foreground">{c.issuer}</p>
-            <p className="mt-4 text-xs uppercase tracking-widest text-primary/80">{c.year}</p>
+            <div className="mt-auto pt-4 flex items-center justify-between gap-3">
+              <p className="text-xs uppercase tracking-widest text-primary/80">{c.year}</p>
+              <a
+                href={c.url}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-lg border border-primary/25 px-3 py-1.5 text-xs font-medium hover:bg-primary/10 transition-colors"
+              >
+                <ExternalLink size={12} /> Show credential
+              </a>
+            </div>
           </motion.div>
         ))}
       </div>
